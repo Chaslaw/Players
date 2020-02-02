@@ -1,0 +1,82 @@
+/*GENERAL*/
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.main-wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+h1 {
+    color: brown;
+    text-transform: uppercase;
+    font-style: helvetica;
+}
+
+/*HEADER*/
+
+header {
+    background-color: brown;
+}
+
+header .logo{
+    display: inline;
+}
+
+header .logo img {
+    width: 10%;
+}
+
+/*MAIN*/
+
+
+div .scroll {
+    width: 50%;
+    height: 50px;
+    background-color: bisque;
+}
+
+.players-a, .substitutions {
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+
+} 
+
+.players-a div, .substitutions div {
+    padding: 5px 15px;
+}
+
+section.players-a .player, section.substitutions .player {
+    background-color: #fafafa;
+margin-bottom: 30px;
+border-bottom: 3px solid #fafa;
+}
+
+.substitutions {
+    display: flex;
+    justify-content: space-between;
+    border-top: 5px solid red;
+    padding: 10px;
+    
+}
+
+.player >img {
+	filter: blue; 
+      -webkit-filter: grayscale(1.); 
+      -webkit-transition: all .5s ease-in-up;  
+}
+
+.player> img:hover {
+    filter: none;
+      -webkit-filter: grayscale(0);
+      -webkit-transform: scale(1.04);
+      border-bottom: 5px solid orangered;
+}
